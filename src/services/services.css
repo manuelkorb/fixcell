@@ -1,0 +1,164 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title-servicelist {
+  margin-top: 200px;
+  font-family: "DM Serif Display, Lobster Two, sans-serif";
+  font-weight: 500;
+  font-size: 70px;
+  color: white;
+  letter-spacing: 12px;
+  border-bottom: 3px solid #000000;
+  text-align: center;
+}
+
+/* .content {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: center;
+  } */
+
+.service {
+  color: black;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* border: 1px solid #000000; */
+  border-radius: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 400px;
+  box-shadow: 2px 7px 15px rgba(0, 0, 0, 1);
+  position: relative;
+}
+
+.service:hover {
+  transform: translateY(-7px);
+}
+
+.service-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  position: absolute;
+  bottom: 0px;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border-radius: 15px;
+  height: 70px;
+}
+
+/* .service-button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: scale(0.95);
+} */
+
+.service-img {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra verticalmente */
+  padding: 0;
+  margin: 0;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.service-cat {
+  padding: 0;
+  margin: 5px 0;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.service-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  height: 100%;
+  width: 100%;
+}
+
+.service-list {
+  display: flex; /* Cambiar de grid a flex */
+  justify-content: center; /* Centra horizontalmente los elementos */
+  align-items: center; /* Centra verticalmente los elementos */
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente fila si es necesario */
+  gap: 100px;
+  height: 100%;
+  width: 100%;
+}
+
+.ant-modal-content {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  color: white;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  height: 100% !important; /* Centra verticalmente */
+  margin-top: 190px !important;
+}
+
+.ant-modal-close-x {
+  color: white;
+  font-size: 14px !important;
+}
+
+@media (max-width: 767px) {
+  .title-servicelist {
+    margin-top: 20px;
+    font-size: 30px;
+  }
+
+  .service {
+    width: 80%;
+    height: 200px;
+  }
+
+  .service-list-container {
+    height: 100%;
+    width: 100%;
+  }
+
+  .service-button {
+    backdrop-filter: blur(0px);
+    height: 100%;
+  }
+
+  .service-list {
+    gap: 0px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .ant-modal-content {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    color: white;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    height: 100% !important;
+    margin-top: 190px !important;
+  }
+
+  .ant-modal-close-x {
+    color: white;
+    font-size: 14px !important;
+  }
+}

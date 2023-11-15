@@ -1,0 +1,71 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(50, 165, 50);
+  height: 12vh;
+  color: white;
+  width: 100%;
+}
+
+.form-presupuesto {
+  background-color: rgb(77, 142, 180);
+  width: 40%;
+  gap: 30px;
+  border-radius: 10px;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.form-h1 {
+  color: white;
+  text-decoration: underline;
+}
+
+.campo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: first baseline;
+  color: white;
+  font-weight: 300;
+  font-size: 20px;
+  width: 85%;
+  margin-bottom: 10px; /* Agrega espacio entre los campos */
+}
+
+.campo Input {
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2), 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.campo TextArea {
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2), 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.campo Button {
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2), 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.modal-button {
+  height: 35px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+@media (max-width: 767px) {
+  .button-presupuesto {
+    width: 100%;
+    font-size: 10px;
+    padding: 0;
+    margin-top: 0px;
+  }
+
+  /* .modal {
+    margin-top: 0px;
+  } */
+}
